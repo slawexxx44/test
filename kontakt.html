@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<link href="_styles/style.css" rel="stylesheet"/>
+<link href="_styles/anythingslider.css" rel="stylesheet"/>
+<link href="_styles/thememetallic.css" rel="stylesheet"/>
+<link href='http://fonts.googleapis.com/css?family=Volkhov:400,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+<script src="_js/knockout-3.1.0.js"></script>
+<script src="_js/jquery-2.1.1.min.js"></script>
+<script src="_js/jquery.validate.min.js"></script>
+<script src="_js/jquery.anythingslider.min.js"></script>
+<script src="_js/jquery.easing.1.2.js"></script>
+<script src="_js/PageLoader.js"></script>
+<script src="_js/pageOneLoader.js"></script>
+<script src="_js/FormValidatorTest.js"></script>
+<script src="_js/AdjustPage.js"></script>
+</head>
+
+<body>
+	<div id="FormDiv">
+		<div id="formDivNavDiv">
+			<img src="images/navigacja.png" id="formDivNavImg">
+		</div>
+	
+	
+	
+		<div id="formDivContactData">
+			<h2>Dane kontaktowe:</h2>
+			<p>Intel Vision</p>
+				<ul>
+				<li>ul. Jakuba Majora 3</li>
+				<li>telefon: 603 066 892</li>
+				<li>mail: <a href="mailto:biuro@intelvision.eu">biuro@intelvision.eu</a></li>
+			</ul>
+		</div>
+		<div id="formDivFormMailSent">
+			
+		</div>
+		<div id="formDivFormContact">
+		<h2>Formularz kontaktowy:</h2>
+	<form action="post.php" method="post" id="formSender" name="formSender">
+			<div class="form">
+				<label for="name" class="label">Imię i nazwisko</label>
+				<input class="required" type="text" id="name" name="name" title="Wpisz imię i nazwisko" placeholder="Imię i nazwisko"/> 
+			</div>
+			<div class="form">
+				<label for="phoneNumber" class="label">Telefon</label>
+				<input class="required" type="tel" id="phoneNumber" name="phoneNumber" title="Podaj numer telefonu" placeholder="Numer telefonu"/>
+			</div>
+			<div class="form">
+				<label class="label" for="email">Adres e-mail</label>
+				<input class="required" type="email" id="email" name="email" title="Podaj adres e-mail" placeholder="Adres e-mail"/>
+			</div>
+			<div class="form">
+				<label for="Subject" class="label">Temat wiadomości</label>
+				<input class="required" name="subject" type="text" id="Subject" title="Podaj tytuł wiadomości" placeholder="Temat"/>
+			</div>
+			<div class="form">
+				<label class="label" for="TextMail">Treść wiadomości:</label>
+				<textarea id="TextMail" name="message" rows = "5" cols="50"></textarea>	
+			</div>	
+			<div id="send">
+				<input type="submit" name="submit" id="submit" value="Wyślij">
+			</div>
+		</form>
+		</div>
+		
+		
+		<div id="formDivContactMap">
+			
+<h2>Mapa:</h2>
+			<iframe src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=intel+vision+jakuba+majora+3,+krak%C3%B3w&amp;aq=&amp;sll=50.053171,20.00473&amp;sspn=0.313464,0.837021&amp;ie=UTF8&amp;hq=intel+vision&amp;hnear=Jakuba+Majora+3,+Krak%C3%B3w,+Wojew%C3%B3dztwo+ma%C5%82opolskie&amp;t=m&amp;ll=50.089379,19.96507&amp;spn=0.006295,0.006295&z=14&amp;output=embed
+			"></iframe>
+		</div>
+	</div>
+	
+</body>
+</html>
